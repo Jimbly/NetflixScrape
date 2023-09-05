@@ -1,0 +1,450 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"save pr",
+				"Project: Save As"
+			],
+			[
+				"prett",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"ssjavas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"conv spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"use space",
+				"Indentation: Use Spaces"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ssjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"jsonfor",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"reope",
+				"File: Reopen Closed File"
+			],
+			[
+				"jsonf",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"json form",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"remove d",
+				"Remove Duplicate Lines"
+			],
+			[
+				"sort",
+				"Sort Lines (Numerically)"
+			],
+			[
+				"lint to",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"ssmard",
+				"Set Syntax: Markdown"
+			],
+			[
+				"reverse",
+				"Permute Lines: Reverse"
+			],
+			[
+				"so",
+				"Sort Lines (Numerically)"
+			],
+			[
+				"sort nu",
+				"Sort Lines (Numerically)"
+			],
+			[
+				"reopen",
+				"File: Reopen Closed File"
+			],
+			[
+				"browse",
+				"Browse Packages (xplorer2)"
+			],
+			[
+				"open con",
+				"Open Containing Folder..."
+			],
+			[
+				"format",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"json",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"json format",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"new ",
+				"New Window"
+			],
+			[
+				"ssxml",
+				"Set Syntax: XML"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"linter setting",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"pref sett",
+				"Preferences: Settings"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Code/SRC2/NetflixScrape"
+	],
+	"file_history":
+	[
+		"/C/UserData/Desktop/Desktop/Notes/Doctor Who Viewing Order.txt",
+		"/C/Code/SRC2/TimeTrackConvert/TimeTrackConvert.js",
+		"/C/UserData/Desktop/Desktop/DashingStrike/InkySpire/Moraff.txt",
+		"/C/UserData/Desktop/Desktop/Notes/Farm stuff.txt",
+		"/C/UserData/Desktop/Desktop/DashingStrike/TODO.txt",
+		"/C/Code/SRC2/NetflixScrape/data/movies/60001507.json",
+		"/C/Users/waste/AppData/Local/Temp/lib2B33.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib81BE.tmp.renamer",
+		"/V/Allavsoft/Download/queuemaker.json",
+		"/V/Allavsoft/Download/queuemaker.js",
+		"/V/Allavsoft/Download/queuemaker.template",
+		"/C/UserData/Desktop/Desktop/Games/Steam Perfect Games.txt",
+		"/C/Users/waste/AppData/Local/Temp/lib3CE2.tmp.renamer",
+		"/Y/backup/nobackup/frvr/worlds/backup_user.txt",
+		"/C/TEMP/log/errors.log",
+		"/C/Windows/Logs/CBS/CBS.log",
+		"/C/Code/frvr/worlds/.git/rebase-merge/git-rebase-todo",
+		"/C/UserData/Desktop/Desktop/Things to Bring.txt",
+		"/C/UserData/Desktop/Desktop/State/Done/Bungaku Shoujo Movie 1.txt",
+		"/C/UserData/Desktop/Desktop/Tithing.txt",
+		"/C/UserData/Desktop/Desktop/Documents/Taxes/Taxes 2023/2023 Estimated Tax Payments.txt",
+		"/C/Games/DOSBox-0.72/dosbox.conf",
+		"/C/Users/waste/AppData/Local/Temp/libE973.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libF3C5.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libB6F3.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib444D.tmp.renamer",
+		"/C/UserData/Desktop/Desktop/Watch List.txt",
+		"/C/UserData/Desktop/Desktop/Notes/GPUs.txt",
+		"/Y/stuff/display_names.json",
+		"/C/UserData/Desktop/Desktop/Address.txt",
+		"/C/Users/waste/AppData/Local/Icarus/Saved/PlayerData/76561197973172839/Prospects/Horse_Planet_Planet_of_Horses.json",
+		"/C/Games/Steam/userdata/12907111/1149460/remotecache.vdf",
+		"/C/Users/waste/AppData/Local/Temp/libB5F3.tmp.renamer",
+		"/C/UserData/Desktop/Desktop/Box Contents.txt",
+		"/V/Allavsoft/Download/queue4.json",
+		"/C/Users/waste/AppData/Local/Temp/lib89BA.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib4D78.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib38C6.tmp.renamer",
+		"/V/Allavsoft/Download/clean.bat",
+		"/C/UserData/Desktop/Desktop/fanime watch list.txt",
+		"/C/UserData/Downloads/Act1.ink",
+		"/C/Users/waste/AppData/Local/Temp/libC954.tmp.renamer",
+		"/C/Users/waste/AppData/LocalLow/Tactical Adventures/Solasta/Characters/Sabin.chr",
+		"/C/Users/waste/AppData/Local/Temp/lib5BEA.tmp.renamer",
+		"/C/Code/SRC2/web/fanime/data.2023.scraped.json",
+		"/C/Code/SRC2/web/fanime/shared.js",
+		"/C/Code/frvr/svnworlds/ART/New UX/Fonts/Fun/Shrikhand/OFL.txt",
+		"/C/UserData/Desktop/Desktop/Setup/chrome_profile_hide.txt",
+		"/C/Code/SRC2/web/fanime/index.html",
+		"/C/Code/SRC2/web/dashingstrike.com/games.pejs",
+		"/Y/VPN/vpnforjk/DashingStrikeStaging.ovpn",
+		"/Y/VPN/stunnel.conf",
+		"/Y/VPN/programs/stunnel.txt",
+		"/Y/VPN/jiankun/stunnel.txt",
+		"/C/Users/waste/AppData/Local/Temp/Temp1_Enemy Names Mod.zip/List of Changes.txt",
+		"/C/Users/waste/AppData/Local/Temp/lib1C6F.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib10F2.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libF2D0.tmp.renamer",
+		"/C/Code/src/regex-crossword/boards.js",
+		"/C/Code/src/regex-crossword/crossword.js",
+		"/C/UserData/Desktop/Desktop/Hazel TODO.txt",
+		"/C/UserData/Downloads/downloaded-logs-20230508-182934.json",
+		"/C/Users/waste/AppData/Local/Temp/libC51.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib372A.tmp.renamer",
+		"/C/UserData/Desktop/Desktop/DashingStrike/DCJam2023 TODO.txt",
+		"/C/Users/waste/AppData/Local/Temp/lib163E.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libDB6.tmp.renamer",
+		"/C/UserData/Desktop/Desktop/pink RAID.txt",
+		"/C/Code/SRCSVN/GLOV/Tools/DistanceFieldGenerator/font_celtictime.GenFont",
+		"/C/Code/glovjs/dcjam2023/.git/COMMIT_EDITMSG",
+		"/C/Users/waste/AppData/Local/Temp/lib2B74.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib71D.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libC89D.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libAC02.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib6F28.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib34BF.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib998.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libBCDF.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib6B06.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib305.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib1AB8.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libCF58.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libACBC.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib6D42.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib3A6B.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libF3EC.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libC47F.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libAA40.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib89A9.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libF9B.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib689D.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib4527.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib1F9E.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib564.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libE067.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libBC64.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libF626.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libBEAB.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib5C67.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libDF9.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libB5F6.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/lib8001.tmp.renamer",
+		"/C/Users/waste/AppData/Local/Temp/libD3F2.tmp.renamer",
+		"/C/UserData/Downloads/message-icespikes.txt",
+		"/C/Code/SRC2/web/dashingstrike.com/LudumDare/DCJ2023 - Copy/levels/level8.json",
+		"/C/Code/SRC2/web/dashingstrike.com/LudumDare/DCJ2023 - Copy/levels/level11.json",
+		"/C/Code/SRC2/web/dashingstrike.com/LudumDare/DCJ2023 - Copy/levels/level12.json",
+		"/C/Code/SRC2/web/dashingstrike.com/LudumDare/DCJ2023 - Copy/levels/level10.json",
+		"/C/Code/SRC2/web/dashingstrike.com/LudumDare/DCJ2023 - Copy/levels/level7.json",
+		"/C/Code/SRC2/web/dashingstrike.com/LudumDare/DCJ2023 - Copy/levels/level0.json",
+		"/C/Code/glovjs/glovjs-crawler/.git/COMMIT_EDITMSG",
+		"/C/Code/glovjs/glovjs/.git/COMMIT_EDITMSG",
+		"/C/Users/waste/AppData/Local/Temp/libB11F.tmp.renamer",
+		"/C/Code/TP/Palette/PALETTE2.PAS",
+		"/C/Code/TP/Palette/PALTEST.PAS",
+		"/C/Code/TP/Palette/PALETTE1.PAS",
+		"/C/Games/Emu/TI82/FFX.82P",
+		"/C/Code/SRC2/DuplicatiLogProc/Backup Exclude Rules.txt",
+		"/J/Games/LudumDare/DCJ23/worlds_apart_v1.1_win/win/credits.txt",
+		"/C/Code/glovjs/dcjam2023svn/src/client/vstyles/path.vstyle",
+		"/C/Users/waste/AppData/Local/Temp/libEBB6.tmp.renamer",
+		"/C/Code/dcjam2023/build/checks.js",
+		"/Y/work/world_backup.sh",
+		"/C/Code/SrcOther/DCJam2023/run.cmd",
+		"/C/Users/waste/Saved Games/Codemasters/ToyboxTurbos/video_settings.xml",
+		"/C/Code/frvr/secondworlds/.git/rebase-merge/git-rebase-todo",
+		"/C/TEMP/log/world.4297956.log",
+		"/C/UserData/Desktop/Desktop/DashingStrike/FRVR/revenue and payments 2020-2022.txt"
+	],
+	"find":
+	{
+		"height": 27.3333333333
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.3333333333
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 132.0
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "NetflixScrape.sublime-project",
+	"replace":
+	{
+		"height": 50.6666666667
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"quemaker",
+				"V:\\Allavsoft\\Download\\queuemaker.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 35.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

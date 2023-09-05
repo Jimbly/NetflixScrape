@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="http://assets.nflxext.com/us/dvd/dexter/favicons/favicon.ico">
+  <title>Netflix DVD Personal Recommendation Report</title>
+  <style type="text/css">
+    body {
+      font-family: "Proxima Nova","Gotham",Helvetica,Arial;
+      background-color: #f9f9f9;
+      color: black;
+      text-decoration-skip-ink: none;
+    }
+    table {
+      background-color:#fff;
+    }
+    tr {
+      box-shadow: 0 1px 3px 0 #a2a6ae;
+    }
+    .boxart {
+      max-height: 120px;
+    }
+    .mpaa {
+      border: 1px solid #979797;
+      padding: 0 2px;
+      display: inline-block;
+      margin-left: 7px;
+      margin-right: 7px;
+      line-height: 1em
+    }
+    .ordinal {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .rating1 {
+      padding-top: 3px;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .rating2 {
+      padding-bottom: 3px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #AAA;
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+    .rent {
+      color: #800;
+    }
+  </style>
+</head>
+<body>
+  <h2><center>Netflix DVD Personal Recommendation Report</center></h2>
+  <h1><center>Highest Rated For You</center></h1>
+  <div id="highest"></div>
+  <h1><center>Things You'll Love More Than Anyone Else</center></h1>
+  <div id="love"></div>
+
+  <script type="text/javascript">
+    window.datadump = DATADUMP;
+  </script>
+  <script type="text/javascript">
+    const BOXART = ['S197', 'GSD', 'S166', 'GHD', 'HD1080', 'W650', 'W1024'];
+
+    function boxart(elem) {
+      if (!elem.boxarts) {
+        return;
+      }
+      for (let ii = 0; ii < BOXART.length; ++ii) {
+        let key = BOXART[ii];
+        if (elem.boxarts.includes(key)) {
+          if (key[0] === 'W' || key[0] === 'S') {
+            key = key.slice(1);
+          }
+          key = key.toLowerCase();
+          return `http://assets.nflxext.com/us/boxshots/${key}/${elem.id}.jpg`;
+        }
+      }
+    }
+
+    function genres(elem) {
+      let ret = [];
+      if (elem.primaryGenre) {
+        ret.push(elem.primaryGenre);
+      }
+      if (elem.genres) {
+        ret = ret.concat(elem.genres.map((a) => a.name));
+      }
+      if (elem.moods) {
+        ret = ret.concat(elem.moods.map((a) => a.name));
+      }
+      return ret.join(', ');
+    }
+
+    function fillreport(key, data) {
+      let html = ['<table>'];
+      for (let ii = 0; ii < data.length; ++ii) {
+        let elem = data[ii];
+        html.push('<tr>');
+        let ba = boxart(elem);
+        html.push(`<td valign=center align=center><div class="ordinal">${ii+1}</div></td>`);
+        if (ba) {
+          html.push(`<td><img class="boxart" src="${ba}"</td>`);
+        } else {
+          html.push(`<td></td>`);
+        }
+        html.push(`<td><div class="rating1">${elem.prediction.toFixed(1)}</div><div class="rating2">Our best guess for you</div>`);
+        html.push(`<div class="rating1">${elem.aRating.toFixed(1)}</div><div class="rating2">Average of ${elem.numRatings} ratings</div></td>`);
+        html.push(`<td><div><a href="https://dvd.netflix.com/Movie/_/${elem.id}" class="title">${elem.name}</a></div>`);
+        html.push(`<div>`);
+          html.push(`<span class="year">${elem.year}</year>`);
+        if (elem.mpaa) {
+          html.push(`<span class="mpaa">${elem.mpaa}</span>`);
+        }
+        html.push(`<span class="genre">${genres(elem)}</span></div>`);
+        html.push(`<div class="rent">${elem.rentState !== 'RENT' ? elem.rentState : ''}</div>`);
+        html.push(`</td>`);
+        html.push('</tr>');
+      }
+
+
+      html.push('</table>');
+      document.getElementById(key).innerHTML = html.join('');
+    }
+    fillreport('highest', datadump.highest_rated);
+    fillreport('love', datadump.best_for_you);
+  </script>
+</body>
+</html>
