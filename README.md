@@ -12,7 +12,7 @@ Example output report [here](https://jimbly.github.io/NetflixScrape/examples/rep
 3. Use the Chrome developer tools (or similar tools in another browser) to copy the `Cookie` string from an authenticated request to `dvd.netflix.com`
   1. This is equivalent to your PASSWORD to Netflix, do not share it with anyone!
   2. It should start with something like "memclid=01234-56789-"
-  3. To find it:
+  3. To find it (see image below):
      1. Open a Chrome window, sign in to Netflix
      2. Go to https://portal.dvd.netflix.com/titles/moviedetail?titleId=70114973
      3. It should show you a JSON blob starting with `{"type":"STANDALONEDISC"` if everything is working correctly
@@ -24,6 +24,9 @@ Example output report [here](https://jimbly.github.io/NetflixScrape/examples/rep
 5. Paste the Cookie you copied in step 3 above into this file into the indicated location, replacing the example text
 6. You're ready to go!  Simply run `run.cmd` by double-clicking on it (Windows), or run `node .` on other platforms.
 7. You can also edit `index.js` and configure some options at the top of the file to control the output and filtering options.
+
+# Extra help finding your Cookie string
+![help](./examples/help.png)
 
 # Notes
 * This tool will download data on around 53K movies/shows from the Netflix DVD site, including, most importantly, their personal prediction for you
