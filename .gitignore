@@ -7,3 +7,4 @@ distro/index.js
 distro/headers.js
 distro/package.json
 distro/package-lock.json
+*.sublime-workspace

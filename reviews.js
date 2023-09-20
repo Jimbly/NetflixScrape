@@ -24,6 +24,7 @@ mkdir('data/reviews');
 console.log('Enumerating movie IDs...');
 let files = fs.readdirSync('data/movies');
 
+console.log('Processing...');
 asyncEachSeries(files, function (filename1, next) {
   let data = JSON.parse(fs.readFileSync(`data/movies/${filename1}`, 'utf8'));
   if (!data.numRatings) {
@@ -32,7 +33,7 @@ asyncEachSeries(files, function (filename1, next) {
   }
   let movie_id = Number(filename1.match(/(\d+)\.json/)[1]);
   if (data.id !== movie_id) {
-    console.log(`${movie_id}: ID mismatch, skipping (${data.id})`);
+    // console.log(`${movie_id}: ID mismatch, skipping (${data.id})`);
     return void next();
   }
 
@@ -40,8 +41,8 @@ asyncEachSeries(files, function (filename1, next) {
   function getReviews(id, page, next) {
     let filename = `data/reviews/${id}.json`;
     if (fs.existsSync(filename)) {
-      let data2 = JSON.parse(fs.readFileSync(filename, 'utf8'));
-      console.log(`Reviews for ${id} (${data.name}) skipped (${data2.reviews.length} reviews found previously)`);
+      // let data2 = JSON.parse(fs.readFileSync(filename, 'utf8'));
+      // console.log(`Reviews for ${id} (${data.name}) skipped (${data2.reviews.length} reviews found previously)`);
       return next();
     }
     let url = `https://portal.dvd.netflix.com/reviews/reviewdetail?titleId=${movie_id}&pageNum=${page}&pageSize=20`;
