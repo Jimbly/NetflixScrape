@@ -189,8 +189,37 @@ function generateReport() {
     }));
     fs.writeFileSync('report.html', report);
 
+    // Dump all ratings report
+    function cleanName(elem) {
+      let name = elem.name;
+      if (name.startsWith('The ')) {
+        name = name.slice(4);
+      }
+      name = name.replace(/['",.!#$()*[\]-]/g, '');
+      name = name.trim();
+      name = `${name} (${elem.year})`;
+      return name.toLowerCase();
+    }
+    movies.sort((a, b) => {
+      let an = cleanName(a);
+      let bn = cleanName(b);
+      if (an < bn) {
+        return -1;
+      } else if (bn < an) {
+        return 1;
+      } else {
+        return a.id - b.id;
+      }
+    });
+    // eslint-disable-next-line arrow-body-style
+    let all = movies.map((elem) => {
+      return `${elem.prediction.toFixed(1)} (avg ${elem.aRating.toFixed(1)})  -` +
+      `  ${elem.name} (${elem.year})  -  ${elem.numRatings} total ratings, ${genres(elem)}, ID:${elem.id}`;
+    });
+    fs.writeFileSync('report-all.txt', all.join('\n'));
+
     // fs.writeFileSync('data/good_ids.json', JSON.stringify(Object.keys(by_id).map(Number)));
-    console.log('Done.  Wrote pretty report to `report.html`.');
+    console.log('Done.  Wrote pretty report to `report.html`.  Wrote full report to report-all.txt');
   });
 }
 
