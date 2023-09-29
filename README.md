@@ -13,7 +13,7 @@ Example output report [here](https://jimbly.github.io/NetflixScrape/examples/rep
      2b. If you installed from source (Option 2 above), open a command/terminal/shell window in the newly extracted folder, and run `npm install`
 4. Use the Chrome developer tools (or similar tools in another browser) to copy the `Cookie` string from an authenticated request to `dvd.netflix.com`
     1. This is equivalent to your PASSWORD to Netflix, do not share it with anyone!
-    2. It may start with something like "memclid=01234-56789-"
+    2. It may start with something like "memclid=01234-56789-" or "DVistor="
     3. To find it (see image below):
         1. Open a Chrome window, sign in to Netflix
         2. Go to https://portal.dvd.netflix.com/titles/moviedetail?titleId=70114973
