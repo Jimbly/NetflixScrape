@@ -7,7 +7,7 @@ const INCLUDE_RATED = true;
 const INCLUDE_UNAVAILABLE = true;
 // How many results to display
 const LIST_SIZE = 100;
-// How many ratings an entry must have received to consider it for the report
+// How many ratings an entry must have received to consider it for the repot
 const RATINGS_CUTOFF = 10;
 // Minimum average rating for the "Things you'll love" report
 const LOVE_MIN_RATING = 2.5;
@@ -48,37 +48,52 @@ function getMovie(movie_id, next) {
     return setImmediate(next);
   }
 
-  request({
-    url: `https://portal.dvd.netflix.com/titles/moviedetail?titleId=${movie_id}&returnRoot=true&returnRecommendedBy=true`,
-    json: true,
-    headers,
-    agent,
-  }, function (err, res) {
-    if (!err && res && (res.statusCode !== 200 || !res.body.name)) {
-      err = `Error: statusCode=${res.statusCode} body=${JSON.stringify(res.body)}`;
-    }
-    if (err) {
-      console.error(`Error getting movie ${movie_id}: ${err}`);
-      if (err.includes && err.includes('Missing cookie')) {
-        console.error('\n\n*** SETUP REQUIRED ***\n\n   Please open `headers.js` (in any' +
-          ' text editor like Notepad) and enter your Netflix cookie.\n\n');
+  let retries = 0;
+  function doit() {
+    request({
+      url: `https://portal.dvd.netflix.com/titles/moviedetail?titleId=${movie_id}&returnRoot=true&returnRecommendedBy=true`,
+      json: true,
+      headers,
+      agent,
+    }, function (err, res) {
+      if (!err && res && (res.statusCode !== 200 || !res.body.name)) {
+        err = `Error: statusCode=${res.statusCode} body=${JSON.stringify(res.body)}`;
       }
-      //return void next();
-      return;
-    }
-    let { body } = res;
-    fs.writeFile(filename, JSON.stringify(body), function (err) {
       if (err) {
-        throw err;
+        console.error(`Error getting movie ${movie_id}: ${err}`);
+        if (err.includes && err.includes('Missing cookie')) {
+          console.error('\n\n*** SETUP REQUIRED ***\n\n   Please open `headers.js` (in any' +
+            ' text editor like Notepad) and enter your Netflix cookie.\n\n');
+        } else {
+          if (retries<10) {
+            ++retries;
+            console.log(`  Retrying after 1 second (${retries})...`);
+            setTimeout(doit, 1000);
+          } else {
+            console.log('  Retries exhausted, giving up');
+          }
+        }
+        //return void next();
+        return;
       }
-      processed_ids[movie_id] = 1;
-      my_store.set('processed_ids', processed_ids);
-      let progress = Object.keys(processed_ids).length;
-      console.log(`${progress} / ${good_ids.length} ` +
-        `(${(progress*100/good_ids.length).toFixed(0)}%) (${movie_id}: ${body.name})`);
-      setTimeout(next, DELAY_GOT_DATA);
+      if (retries) {
+        console.log('  Retry successful.');
+      }
+      let { body } = res;
+      fs.writeFile(filename, JSON.stringify(body), function (err) {
+        if (err) {
+          throw err;
+        }
+        processed_ids[movie_id] = 1;
+        my_store.set('processed_ids', processed_ids);
+        let progress = Object.keys(processed_ids).length;
+        console.log(`${progress} / ${good_ids.length} ` +
+          `(${(progress*100/good_ids.length).toFixed(0)}%) (${movie_id}: ${body.name})`);
+        setTimeout(next, DELAY_GOT_DATA);
+      });
     });
-  });
+  }
+  doit();
 }
 
 function generateReport() {
