@@ -2,7 +2,7 @@
 
 // Copy and paste your `Cookie` string from the Chrome debug tools network tab below.
 // This is equivalent to your PASSWORD to Netflix, do not share it with anyone!
-// It should start with something like "memclid=01234-56789-"
+// It should start with something like "memclid=01234-56789-" or "DVisitor="
 // To find this:
 //   Open a Chrome window, sign in to Netflix
 //   Go to https://portal.dvd.netflix.com/titles/moviedetail?titleId=70114973
