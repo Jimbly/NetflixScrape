@@ -2,11 +2,11 @@
 // Configure options here, place your cookie in `headers.js`
 
 // Whether or not to include things you've rated on Netflix
-const INCLUDE_RATED = false;
+const INCLUDE_RATED = true;
 // Whether or not to include DVDs that are not currently available on Netflix
 const INCLUDE_UNAVAILABLE = true;
 // How many results to display
-const LIST_SIZE = 20;
+const LIST_SIZE = 100;
 // How many ratings an entry must have received to consider it for the repot
 const RATINGS_CUTOFF = 10;
 // Minimum average rating for the "Things you'll love" report
@@ -59,7 +59,7 @@ function getMovie(movie_id, next) {
     }
     if (err) {
       console.error(`Error getting movie ${movie_id}: ${err}`);
-      if (err.includes?.('Missing cookie')) {
+      if (err.includes && err.includes('Missing cookie')) {
         console.error('\n\n*** SETUP REQUIRED ***\n\n   Please open `headers.js` (in any' +
           ' text editor like Notepad) and enter your Netflix cookie.\n\n');
       }
