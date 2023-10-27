@@ -1,8 +1,8 @@
 @for %%a in (%0) do set ROOT=%%~dpa
 @PATH %ROOT%bin\;%PATH%
-@if NOT EXIST %ROOT%bin\node_modules\npm\package.json @(
+@if NOT EXIST "%ROOT%bin\node_modules\npm\package.json" @(
   @echo Extracting bin/node_modules.tgz...
-  @pushd %ROOT%bin
+  @pushd "%ROOT%bin"
   tar xzf node_modules.tgz
   @popd
 )
